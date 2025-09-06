@@ -2605,6 +2605,11 @@ float plutosvg_document_get_height(const plutosvg_document_t* document)
     return document->height;
 }
 
+plutovg_path_t* plutosvg_document_get_path(const plutosvg_document_t* document)
+{
+    return document->path;
+}
+
 bool plutosvg_document_extents(const plutosvg_document_t* document, const char* id, plutovg_rect_t* extents)
 {
     render_state_t state;
